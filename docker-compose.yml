@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres-todolist:
+    image: "postgres"
+    container_name: "postgres-todolist"
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: todolist
+      POSTGRES_PASSWORD: todolist
+      POSTGRES_DB: todolist
+    volumes:
+      - data-todolist:/var/lib/postgresql/data
+volumes:
+  data-todolist: null

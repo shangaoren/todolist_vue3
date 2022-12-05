@@ -1,0 +1,25 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "sandbox project todolist with vue3/ quasar in front and bubojs in back",
+  "main": "index.js",
+  "repository": "git@github.com:shangaoren/todolist_vue3.git",
+  "author": "Florian GERARD <fgerard@beeionic.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@quasar/cli": "^1.3.2",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@tinyhttp/cors": "^2.0.0",
+    "@types/morgan": "^1.9.3",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "start:database": "docker-compose up postgres-todolist"
+  }
+}
